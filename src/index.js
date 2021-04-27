@@ -1,33 +1,7 @@
-// console.log('%c HI', 'color: firebrick')
-//
-// //Challenge 1
-//
-// const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
-//
-//   fetch(imgUrl)
-//   .then(response => response.json())
-//   .then(result => {
-//     ceoDogImg(result.message)
-//   })
-//
-//   function ceoDogImg(dogs){
-//     console.log(dogs)
-//     dogs.forEach(dog => {
-//       console.log(dog)
-//       const goodBoyContainer = document.querySelector('#dog-image-container')
-//       const goodBoy = document.createElement('img').src = dog
-//       goodBoy.src = dog
-//       goodBoyContainer.appendChild(goodBoy)
-//     });
-//   }
-
-//Challenge 2
-//
-// const breedUrl = 'https://dog.ceo/api/breeds/list/all'
-
-
-
 console.log('%c HI', 'color: firebrick')
+
+
+
  let imagesDiv;
  let ul;
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -36,6 +10,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   chal1();
   chal2();
 })
+
+
+// Challenge 1
 function chal1(){
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
  fetch(imgUrl)
@@ -55,6 +32,9 @@ function renderImage(json) {
     `;
   }
 }
+
+
+//Challenge 2
 function chal2(){
 const breedUrl ='https://dog.ceo/api/breeds/list/all'
  fetch(breedUrl)
@@ -78,3 +58,7 @@ function renderUl(json) {
     ul.appendChild(li);
   }
 }
+
+//Challenge 3 
+
+
